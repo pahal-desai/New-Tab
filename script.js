@@ -23,3 +23,9 @@ async function getWeather() {
     document.querySelector(".temp").textContent =
         weather.current.temperature_2m + "°C";
 }
+
+function search(event) {
+    if (event.key === "Enter") {
+        window.location.href = "https://www.google.com/search?q=" + event.target.value;
+    }
+}

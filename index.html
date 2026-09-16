@@ -29,6 +29,18 @@
             <img src="https://open.spotify.com/favicon.ico" alt="Spotify">
         </a>
     </div>
+    <div class="weather">
+        <div class="weathersearch">
+            <input id="city" type="text" placeholder="Enter city" />
+            <button onclick="getWeather()">Search</button>
+        </div>
+
+        <div id="weatherresult">
+            <div class="temp">--°C</div>
+            <div class="condition">Search for a city</div>
+            <div class="location"></div>
+        </div>
+    </div>
 </body>
 
 </html>

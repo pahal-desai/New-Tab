@@ -20,6 +20,6 @@ async function getWeather() {
         `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current=temperature_2m`
     ).then(r => r.json());
 
-    document.getElementById("temp").textContent =
+    document.querySelector(".temp").textContent =
         weather.current.temperature_2m + "°C";
 }

@@ -12,6 +12,7 @@ body {
 }
 
 .searchbar {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -63,4 +64,46 @@ body {
     width: 48px;
     height: 48px;
     object-fit: contain;
+}
+
+.weather {
+    position: absolute;
+    padding-left: 80%;
+    padding-top: 2.25%;
+    /*i hate to comment but i did a lot of trial and errors for this value. wierd combo but fuck it, it just works*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: lightgray;
+    font-size: 24px;
+    font-weight: 200;
+}
+
+.weather input {
+    width: 150px;
+    height: 40px;
+    background: transparent;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    color: white;
+}
+
+.wthrbttn {
+    background: transparent;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 200;
+    color: lightgray;
+    cursor: pointer;
+}
+
+.weatherresult {
+    padding-top: 10px;
+}
+
+.linebelowweather {
+    width: 250px;
+    background-color: lightgray;
+    margin-top: 1px;
+    margin-bottom: 1px;
 }

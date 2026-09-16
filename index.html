@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <title>New Tab</title>
+    <style>
+        body {
+            background-image: url("wallpapers/default.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .time {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: lightgray;
+            font-size: 72px;
+            font-weight: 200;
+        }
+    </style>
+    <script>
+        setInterval(() => {
+            const date = new Date();
+            const time = date.toLocaleTimeString([], {
+                hour: '2-digit',
+                minute: '2-digit'
+            });
+            document.querySelector('.time').textContent = time;
+        }, 1000);
+    </script>
+</head>
+
+<body>
+    <div class="time">00:00</div>
+    <div class="searchbar">
+        <input type="text" placeholder="Search">
+    </div>
+</body>
+
+</html>

@@ -2,36 +2,32 @@
 
 <head>
     <title>New Tab</title>
-    <style>
-        body {
-            background-image: url("wallpapers/default.jpg");
-            background-size: cover;
-            background-position: center;
-        }
-
-        .time {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: lightgray;
-            font-size: 72px;
-            font-weight: 200;
-        }
-    </style>
-    <script>
-        setInterval(() => {
-            const date = new Date();
-            const time = date.toLocaleTimeString([], {
-                hour: '2-digit',
-                minute: '2-digit'
-            });
-            document.querySelector('.time').textContent = time;
-        }, 1000);
-    </script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
     <div class="time">00:00</div>
     <div class="searchbar">
         <input type="text" placeholder="Search">
+    </div>
+    <hr class="linebelowsearchbar">
+    <div class="tiles">
+        <a href="https://www.youtube.com" title="YouTube">
+            <img src="https://www.youtube.com/favicon.ico" alt="YouTube">
+        </a>
+        <a href="https://www.netflix.com" title="Netflix">
+            <img src="https://www.netflix.com/favicon.ico" alt="Netflix">
+        </a>
+        <a href="https://chatgpt.com" title="ChatGPT">
+            <img src="https://chatgpt.com/favicon.ico" alt="ChatGPT">
+        </a>
+        <a href="https://github.com" title="GitHub">
+            <img src="https://github.com/favicon.ico" alt="GitHub">
+        </a>
+        <a href="https://open.spotify.com" title="Spotify">
+            <img src="https://open.spotify.com/favicon.ico" alt="Spotify">
+        </a>
     </div>
 </body>
 
